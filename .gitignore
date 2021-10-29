@@ -1,0 +1,10 @@
+*
+
+!/.gitignore
+!/leetcode*/
+!/p*/
+
+!*.cpp
+!*.c
+!*.h
+!*.py
