@@ -31,10 +31,6 @@ class Solution:
         if endWord not in wordList :
             return 0
         wordList.remove(endWord)
-        #dis2BegRank = [[] for _ in range(len(beginWord) + 1)]
-
-
-
         startState = state(endWord)
         startState.step = 1
         endState = state(beginWord)
@@ -61,4 +57,4 @@ class Solution:
 
 if __name__ == '__main__':
     ss = Solution()
-    print(ss.ladderLength("hit","cog",["hot","dot","dog","lot","log"]))
+    print(ss.ladderLength("hit","cog",["hot","dot","dog","lot","log","cog"]))
