@@ -35,6 +35,9 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+import heapq
+from collections import deque
+from functools import cmp_to_key
 from typing import Dict
 
 
@@ -57,5 +60,9 @@ class Solution:
             if top.left is not None:
                 sentence[top.left.val] = sentence[top.val] + "->" + str(top.left.val)
                 stack.append(top.left)
+        a = deque()
+        bb = []
+        heapq.heapify(bb)
+        cmp_to_key
         return result
 # leetcode submit region end(Prohibit modification and deletion)
